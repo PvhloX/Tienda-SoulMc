@@ -5,45 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Rangos - SOUL MC</title>
     <style>
+        /* Fondo general y estilos básicos */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(to right, #2a2a2a, #3c3c3c);
+            color: #fff;
         }
+
+        /* Cabecera de la tienda */
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+            background-color: #444;
+            padding: 20px;
             text-align: center;
         }
-        h1 {
-            margin: 0;
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
+
+        /* Estilos para los contenedores de cada rango */
         .container {
-            padding: 20px;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
         }
+
         .rank {
-            background-color: #fff;
-            padding: 20px;
-            margin: 10px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .rank h2 {
-            margin: 0;
-        }
-        .rank p {
-            margin: 10px 0 0;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             text-align: center;
-            padding: 10px 0;
+            transition: transform 0.3s;
+        }
+
+        /* Efecto hover al pasar el mouse sobre los rangos */
+        .rank:hover {
+            transform: scale(1.05);
+        }
+
+        .rank h2 {
+            font-size: 2em;
+            margin: 0;
+            color: #ffcc00;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .rank p {
+            font-size: 1.2em;
+            color: #f4f4f4;
+            margin-top: 15px;
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+            font-size: 1em;
+            color: #bbb;
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
